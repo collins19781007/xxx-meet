@@ -1,0 +1,334 @@
+body {
+    padding: 0;
+    margin: 0;
+    border: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Prompt", sans-serif;
+
+}
+
+.head {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-left: 3rem;
+    width: 100%;
+    color: #eee;
+    box-shadow: 1px 1px 10px rgb(0, 0, 0, 0.5);
+    position: fixed;
+    height: 5rem;
+    top: 2px;
+    z-index: 1000000;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    margin-top: -2px;
+
+
+}
+
+.head nav {
+    display: flex;
+    gap: 17rem;
+}
+
+.head nav .nav {
+    display: flex;
+    gap: 4rem;
+    margin-top: 1.4rem;
+}
+
+.head nav .nav li a {
+    text-decoration: none;
+    color: #eee;
+}
+
+.head nav .nav li :nth-of-type() a {
+    color: #000;
+}
+
+.buttons {
+    display: flex;
+    gap: 1rem;
+    margin-left: 63rem;
+    position: absolute;
+
+}
+
+.btn1 {
+    margin-left: -3rem;
+}
+
+.buttons .btn1 button {
+    background-color: rgb(179, 10, 10);
+    padding: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1.5rem;
+    margin-top: 1rem;
+    border-radius: 10px;
+    border: none;
+}
+
+.buttons .btn2 button {
+    background-color: #eee;
+    padding: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: 1rem;
+    width: 6rem;
+    border-radius: 10px;
+    border: none;
+}
+
+.buttons .btn1 button a {
+    color: #eee;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+.buttons .btn2 button a {
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+.nav-menu {
+    display: none;
+}
+
+@media (max-width:720px) {
+    body {
+        /* background-color: red; */
+        width: 100%;
+    }
+
+    .head nav .nav {
+        display: none;
+    }
+
+    .head {
+        background-color: rgba(0, 0, 0, 0.5);
+        padding-left: 0rem;
+        width: 100%;
+        color: #eee;
+        box-shadow: 1px 1px 10px rgb(0, 0, 0, 0.5);
+        position: fixed;
+        top: 1px;
+        z-index: 1000000;
+        margin-top: -2px;
+
+
+    }
+
+    .head nav {
+        margin-left: 3rem;
+        /* position: fixed; */
+    }
+
+    .buttons {
+        display: none;
+    }
+
+    .nav-menu {
+        display: block;
+        margin-left: -3rem;
+        margin-top: 1.5rem;
+        color: #eee;
+
+    }
+
+
+
+}
+
+.segment1 {
+    width: 100%;
+    height: 40rem;
+    margin-top: 5rem;
+    position: absolute;
+
+
+}
+
+.segment1 .img img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 310;
+}
+
+.segment1 .content {
+    display: flex;
+}
+
+.segment1 .content .cont-passage {
+    padding: 2.5rem;
+    width: 100%;
+    height: 40rem;
+    z-index: 610;
+    position: absolute;
+    background-color: rgba(255, 0, 0, 0.7);
+
+
+}
+
+.segment1 .content .cont-img {
+    width: 25rem;
+    height: 29rem;
+    background-color: black;
+    position: absolute;
+    z-index: 100000;
+    margin-left: 46rem;
+    margin-top: 3rem;
+
+}
+
+.segment1 .content .cont-img .vail {
+    background-color: #000;
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+}
+
+.segment1 .content .cont-img img {
+    position: absolute;
+    z-index: 20;
+}
+
+.segment1 .content .cont-img img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.segment1 .content .cont-passage h1 {
+    width: 26rem;
+
+
+    margin-top: 7rem;
+    color: #eee;
+    font-size: 40px;
+}
+
+.segment1 .content .cont-passage p {
+    width: 28rem;
+    color: bisque;
+}
+
+.segment1 .content .cont-passage button {
+    background-color: #000;
+    color: #eee;
+    width: 9rem;
+    height: 2rem;
+    border: none;
+}
+
+@media (max-width:720px) {
+    .segment1 {
+        /* background-color: rgb(255, 0, 0); */
+        width: 100%;
+        margin-top: 4rem;
+    }
+
+
+    .segment1 .content .cont-passage h1 {
+        width: 14rem;
+
+        margin-top: 4rem;
+        color: #eee;
+        font-size: 20px;
+    }
+
+    .segment1 .content .cont-passage p {
+        width: 15rem;
+    }
+
+    .segment1 .content {
+        width: 354px;
+        height: 26rem;
+        position: absolute;
+        z-index: 310;
+    }
+
+    .segment1 .content .cont-img {
+        width: 100%;
+        height: 20rem;
+        background-color: transparent;
+        position: absolute;
+        z-index: 100000;
+        margin-left: 0rem;
+        margin-top: 28rem;
+        border-radius: 20px;
+
+    }
+
+    .segment1 .content .cont-img img {
+        border-radius: 20px;
+        width: 100%;
+
+    }
+
+
+
+
+}
+
+.segment2 {
+    width: 100%;
+    height: 25rem;
+    background-color: black;
+    position: absolute;
+    margin-top: 40rem;
+    display: flex;
+    padding-top: 5rem;
+
+    .seg2-content1 {
+        background-color: rgba(253, 28, 28, 0.5);
+        width: 24rem;
+        height: 15rem;
+        margin-top: 3rem;
+
+        margin-left: 2.5rem;
+    }
+
+    .seg2-content2 {
+        background-color: rgba(253, 28, 28, 0.5);
+        width: 24rem;
+        height: 15rem;
+        margin-left: 2.5rem;
+        margin-top: 3rem;
+
+    }
+
+    .seg2-content3 {
+        background-color: rgba(253, 28, 28, 0.5);
+        width: 24em;
+        margin-top: 3rem;
+        height: 15rem;
+        margin-left: 2.5rem;
+    }
+}
+.swiper {
+    width: 24rem;
+    height: 27rem;
+    z-index: 100000;
+    margin-top: 5rem;
+    margin-left: 50rem;
+  }
+  
+  .swiper-slide {
+    /* text-align: center; */
+    font-size: 18px;
+    background: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
